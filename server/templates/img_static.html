@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta http-equiv="refresh" content="5" >
+    <style>
+
+        *{
+            background: rgb(183, 213, 231);
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>채팅 분석 결과</h1>
+    {% for pic in pics %}
+        <img src='/static/{{pic}}?' + new Date().getTime()/>
+    {% endfor %}
+  </body>
+</html>
