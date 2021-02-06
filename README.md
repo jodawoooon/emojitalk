@@ -116,15 +116,15 @@ https://youtu.be/-DK67gsgLS8
 
 ﻿
  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMTU2/MDAxNjA2ODAyNDM1MjU1.QsubiY4-VdQhWnzv5UGtBmg0c78BKPFeeBMfDnJueT4g.q7Wik86vK9InYnmi1JD4oA9Hr79vVlOpXcK6Lm-aVDYg.PNG.jodawooooon/Screenshot_20201127-233631.png?type=w773"  width="300" >
- <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfNjQg/MDAxNjA2ODAyNDM1NDg1.kGXT9gQEaT1yAd3cgG8zPdiNGZ_0HCGiop_acU0uKmkg.n9HPvOXzJ-70nGh5jB2bl1ki0OA8mKz5CmO_eBZ5D-Ig.PNG.jodawooooon/Screenshot_20201127-233645.png?type=w773"  width="300" >
-  <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfMjgy/MDAxNjA2ODAyNDM1NTA2.4W7-Ummy3hBb6T7q5uBdThH3v8rtwabfMfJ9so4tAGMg._uw6qjLKYDkOEDbutC1KprmRZAi9I_TeRRk4xiwGOGIg.PNG.jodawooooon/Screenshot_20201028-010730.png?type=w773"  width="300" >
-   <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfNTMg/MDAxNjA2ODAyNDM1NzE0.qBDeMWYv27v9EVJj13tz3nIgdgtA8gDUwzBxQhgZkgog.G8fgd9avyEg425FF9N8rVonAPue2PryyeJB78OyFBqIg.PNG.jodawooooon/Screenshot_20201127-233845.png?type=w773"  width="300" > 
+ <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjQg/MDAxNjA2ODAyNDM1NDg1.kGXT9gQEaT1yAd3cgG8zPdiNGZ_0HCGiop_acU0uKmkg.n9HPvOXzJ-70nGh5jB2bl1ki0OA8mKz5CmO_eBZ5D-Ig.PNG.jodawooooon/Screenshot_20201127-233645.png?type=w773"  width="300" >
+  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMjgy/MDAxNjA2ODAyNDM1NTA2.4W7-Ummy3hBb6T7q5uBdThH3v8rtwabfMfJ9so4tAGMg._uw6qjLKYDkOEDbutC1KprmRZAi9I_TeRRk4xiwGOGIg.PNG.jodawooooon/Screenshot_20201028-010730.png?type=w773"  width="300" >
+   <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNTMg/MDAxNjA2ODAyNDM1NzE0.qBDeMWYv27v9EVJj13tz3nIgdgtA8gDUwzBxQhgZkgog.G8fgd9avyEg425FF9N8rVonAPue2PryyeJB78OyFBqIg.PNG.jodawooooon/Screenshot_20201127-233845.png?type=w773"  width="300" > 
   <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300">
-
+​
 
 ## 참고 자료
 
-​
+
 
 한예림, 한국통신학회, “최신 정보통신기술 Google에서 제공하는 Firebase의 실시간 데이터베이스 이용에 관한 연구”, 2017년
 
@@ -138,24 +138,14 @@ https://youtu.be/-DK67gsgLS8
 
 A messenger app for Android based on Firebase, https://github.com/gujc71/DirectTalk9
 
-https://firebase.google.com/docs/android/setup?hl=ko
-
-
-firebase.google.com
+https://firebase.google.com/docs/android/setup?hl=kofirebase.google.com
 
 얼굴 인식과 표정 분석은 android faceDetector, android affdex sdk를 사용하였습니다.
 
 https://developer.android.com/reference/android/media/FaceDetector
 
-
-FaceDetector  |  Android 개발자  |  Android Developers
-Google은 흑인 공동체를 위한 인종 간 평등을 진전시키기 위해 노력하고 있습니다. Google에서 어떤 노력을 하고 있는지 확인하세요 . Android 개발자 Docs Reference Table of contents Summary Nested classes Public constructors Public methods Protected methods FaceDetector Kotlin | Java public class FaceDetector extends Object java.lang.Object   ...
-
 developer.android.com
 
-​
-
-채팅 중 실시간으로 전면 카메라를 통해 사용자의 표정을 인식하여 이모티콘으로 출력됨을 확인하였고, 서버에서 채팅 데이터를 수신하여 word cloud 및 사용자, 요일, 감정 별 빈도수 그래프 생성 후 웹 서버에 파싱됨을 확인함.
 
 ​
 
