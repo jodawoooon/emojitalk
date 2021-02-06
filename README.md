@@ -1,6 +1,7 @@
 # EmojiTalk ( 지능형 채팅 서비스)
 
-<center><img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773" width="500"></center>
+
+<p align="center"><img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773" width="500"></p>
 
 
 ## 1. 개요
@@ -108,19 +109,20 @@ Android와 Python 서버 간 TCP/IP Socket 통신을 구현하였고 Python 서�
 
 캡스톤 포스터
 
-​[![](https://postfiles.pstatic.net/MjAyMDEyMDFfMjY3/MDAxNjA2ODAxMTM3NjAy.qt95CHDHV2oW1q-yxGm72s7UKpd2tHaXEuyDAjPOfC0g.oduNa8XlllBH_RSYi3oUs2rY5W79hRSULi5HnlO9Z2wg.PNG.jodawooooon/SE-ba7da886-2359-4c74-a916-3620ec683828.png?type=w773)](https://blog.naver.com/PostList.nhn?blogId=jodawooooon&from=postList&categoryNo=12#)
+​[![](https://postfiles.pstatic.net/MjAyMDEyMDFfMjY3/MDAxNjA2ODAxMTM3NjAy.qt95CHDHV2oW1q-yxGm72s7UKpd2tHaXEuyDAjPOfC0g.oduNa8XlllBH_RSYi3oUs2rY5W79hRSULi5HnlO9Z2wg.PNG.jodawooooon/SE-ba7da886-2359-4c74-a916-3620ec683828.png?type=w773)](https://blog.naver.com/PostList.nhn?blogId=jodawooooon&from=postList&categoryNo=12#){:.aligncenter}
+
 
 https://youtu.be/-DK67gsgLS8
 
 시연 동영상
 
 
-﻿<center>
+﻿<p align="center">
  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMTU2/MDAxNjA2ODAyNDM1MjU1.QsubiY4-VdQhWnzv5UGtBmg0c78BKPFeeBMfDnJueT4g.q7Wik86vK9InYnmi1JD4oA9Hr79vVlOpXcK6Lm-aVDYg.PNG.jodawooooon/Screenshot_20201127-233631.png?type=w773"  width="300" >
  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjQg/MDAxNjA2ODAyNDM1NDg1.kGXT9gQEaT1yAd3cgG8zPdiNGZ_0HCGiop_acU0uKmkg.n9HPvOXzJ-70nGh5jB2bl1ki0OA8mKz5CmO_eBZ5D-Ig.PNG.jodawooooon/Screenshot_20201127-233645.png?type=w773"  width="300" >
   <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMjgy/MDAxNjA2ODAyNDM1NTA2.4W7-Ummy3hBb6T7q5uBdThH3v8rtwabfMfJ9so4tAGMg._uw6qjLKYDkOEDbutC1KprmRZAi9I_TeRRk4xiwGOGIg.PNG.jodawooooon/Screenshot_20201028-010730.png?type=w773"  width="300" >
    <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNTMg/MDAxNjA2ODAyNDM1NzE0.qBDeMWYv27v9EVJj13tz3nIgdgtA8gDUwzBxQhgZkgog.G8fgd9avyEg425FF9N8rVonAPue2PryyeJB78OyFBqIg.PNG.jodawooooon/Screenshot_20201127-233845.png?type=w773"  width="300" > 
-  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300"></center>
+  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300"></p>
 ​
 
 ## 참고 자료
