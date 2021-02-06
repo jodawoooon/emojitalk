@@ -1,6 +1,6 @@
 # EmojiTalk ( 지능형 채팅 서비스)
 
-<img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773" width="500">
+<center><img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773" width="500"></center>
 
 
 ## 1. 개요
@@ -115,12 +115,12 @@ https://youtu.be/-DK67gsgLS8
 시연 동영상
 
 
-﻿
+﻿<center>
  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMTU2/MDAxNjA2ODAyNDM1MjU1.QsubiY4-VdQhWnzv5UGtBmg0c78BKPFeeBMfDnJueT4g.q7Wik86vK9InYnmi1JD4oA9Hr79vVlOpXcK6Lm-aVDYg.PNG.jodawooooon/Screenshot_20201127-233631.png?type=w773"  width="300" >
  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjQg/MDAxNjA2ODAyNDM1NDg1.kGXT9gQEaT1yAd3cgG8zPdiNGZ_0HCGiop_acU0uKmkg.n9HPvOXzJ-70nGh5jB2bl1ki0OA8mKz5CmO_eBZ5D-Ig.PNG.jodawooooon/Screenshot_20201127-233645.png?type=w773"  width="300" >
   <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMjgy/MDAxNjA2ODAyNDM1NTA2.4W7-Ummy3hBb6T7q5uBdThH3v8rtwabfMfJ9so4tAGMg._uw6qjLKYDkOEDbutC1KprmRZAi9I_TeRRk4xiwGOGIg.PNG.jodawooooon/Screenshot_20201028-010730.png?type=w773"  width="300" >
    <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNTMg/MDAxNjA2ODAyNDM1NzE0.qBDeMWYv27v9EVJj13tz3nIgdgtA8gDUwzBxQhgZkgog.G8fgd9avyEg425FF9N8rVonAPue2PryyeJB78OyFBqIg.PNG.jodawooooon/Screenshot_20201127-233845.png?type=w773"  width="300" > 
-  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300">
+  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300"></center>
 ​
 
 ## 참고 자료
