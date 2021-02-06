@@ -1,6 +1,6 @@
 # EmojiTalk ( 지능형 채팅 서비스)
 
-<img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773)](https://blog.naver.com/PostList.nhn?blogId=jodawooooon&from=postList&categoryNo=12#" width="500">
+<img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNjgg/MDAxNjA2ODAwNjc3OTg0.TvdqrxblsLT8j4QHvmzLPtwFLg0HNHmw5ZCJE2u931Ig.rVRw0hmT7UycSnqbhRvJsSuIi8nAwIsFWh_lH2yA_90g.PNG.jodawooooon/%EC%95%84%EC%9D%B4%EC%BD%98.png?type=w773" width="500">
 
 
 ## 1. 개요
