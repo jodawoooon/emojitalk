@@ -79,13 +79,13 @@ Android와 Python 서버 간 TCP/IP Socket 통신을 구현하였고 Python 서�
 
 
 조다운 / 충북대학교 정보통신공학부 
- - 표정 분석 안드로이드 어플리케이션 개발
- - android - server 데이터 송수신 구현
+ - 표정 분석 Android 어플리케이션 개발
+ - android - server 데이터 송수신 서버 
 
 
 오하영 / 충북대학교 정보통신공학부 
- - python 데이터 분석 서버 개발
- - 분석 웹페이지 구현
+ - 데이터 분석 구현
+ - 분석 웹페이지 개발
 
 
 
