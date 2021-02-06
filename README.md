@@ -18,13 +18,13 @@
 
 ​
 
-## 3. 목표
+## 3-1. 목표
 
 이번 프로젝트 목표는 다중 채팅과 동시에 감정을 분석해 상대의 감정을 실시간으로 알 수 있는 채팅 플랫폼을 만드는 것이다. 이 채팅 플랫폼을 통하여 얼굴을 마주하지 않고 채팅을 하면서도 상대방의 감정을 파악할 수 있고 대화 종료 후 어떤 대화를 했는지 분석할 수 있다.
 
 본 어플리케이션의 기능은 다음과 같다.
 
-​
+
 
 1) 로그인, 친구목록, 프로필 수정, 사진 및 파일 전송 등의 기능을 지닌 채팅 어플리케이션
 
@@ -52,16 +52,54 @@ wordcloud, 사용자 별 빈도수, 요일 별 빈도수, 사용자들의 감정
 
 대화가 끝난 뒤에는 채팅 내용을 분석하여 주제별 빈도수 그래프를 만들고 핵심 단어들을 정리한다. 해당 채팅방에서 어떤 대화가 오고 갔는지, 중심 내용이 무엇이었는지 한 눈에 볼 수 있게 요약하여 제공한다.
 
-​
 
 ​
-## 4. 연구 환경
+
+
+## 3-2. 동작 원리
+
+회원가입 / 로그인 데이터는 Google의 Firebase 데이터베이스에 저장 후 접근 가능하다. 데이터는 JSON으로 저장되며 연결된 모든 클라이언트에 실시간으로 동기화된다. 채팅은 Firebase의 인스턴스에 접근하여 메시지를 디바이스 간 송수신하여 이루어진다.
+
+대화방 접근 시 사용자의 전면 카메라에 접근하고 Google의 FaceDetector로 사용자의 얼굴을 인식한다. 표정 인식은 affdex detector sdk를 사용하였고 face의 emotions과 expressions 중 Joy, Anger, Sadness, Surprise, Contempt, Attention, Valance를 get하여 가장 큰 emotion을 사용자의 표정으로 결정하였다. 결정된 표정은 이모티콘으로 변환하여 사용자에게 제공한다. 채팅 데이터는 키보드 또는 음성으로 입력할 수 있다. 음성 인식 기능은 Google Speech Recognition API를 사용하였다.
+
+채팅 분석 버튼 클릭 시 로딩 화면이 출력되고 사용자들이 주고받은 대화 내용이 서버로 전송 된다. 로딩 화면이 출력되는 동안 AsyncTask를 이용하여 Background에서 채팅 분석 웹페이지의 URL에 계속 접근하여 get ResponseCode한다. ResponseCode가 ok이면 채팅 분석 웹페이지가 구현이 다 되었다는 뜻이므로 doInBackgroud의 while문을 종료한다. onPostExecute에 채팅 분석 웹페이지 intent를 startActivity하여 통신이 완료되면 채팅 분석 결과 웹페이지로 넘어가도록 한다. 
+또한 대화가 분석되는 동안 로딩 화면을 구현하기 위해 Glide를 이용하여 로딩 이미지를 화면에 띄우도록 하였다. 
+
+Android와 Python 서버 간 TCP/IP Socket 통신을 구현하였고 Python 서버에서는 Multi Thread로 Android의 채팅 데이터를 수신한다. 서버에서는 수신된 String 형식의 Android 채팅 데이터를 정규표현식으로 패턴을 정의하여 채팅 분석을 위한 데이터를 수집한다. 수집한 데이터를 pandas 모듈을 사용하여 dataframe 형식으로 가공하였으며 채팅방 분석을 위하여 timestamp를 날짜로 변경하였고, 요일, 시, 분의 칼럼을 추가하였다. 
+ 
+채팅방의 주제와 대화 흐름을 알기 쉽게 하기 위하여 wordcloud를 생성하였다. 한글 형태소 분석 모듈 KoNLPy에서 제공하는 kkma라는 패키지를 사용하여 진행하였다. 이렇게 형태소 단위로 쪼개지는 과정이 끝난 데이터들은 kkma에서 제공하는 함수 kkma.nouns()를 통하여 명사만 추출하여 따로 저장한다. 추출된 명사의 횟수는 pandas를 통하여 특정 칼럼을 그룹으로 하여 집계한다. 집계된 명사들을 빈도수가 많은 순서대로 정렬한 뒤 wordcloud를 생성할 수 있는데, 빈도수가 많은 순서대로 글씨가 크게, 빈도수가 적을수록 글씨 크기가 작게 표현했다.
+채팅방이 가장 활발한 요일, 사용자별 대화 수, 채팅방 분위기를 파악하기 위해 요일, 사용자, 감정을 빈도수를 기반으로 집계하였으며, Python의 matplotlib를 기반으로 한 시각화 라이브러리 seaborn을 사용하여 분석 결과를 도출하였다. 
+이렇게 도출된 그래프 이미지는 flask 서버로 전송되어 웹페이지에 띄우도록 설계하였다.
+
+
+​
+
+
+## 4-1. 연구진
+
+
+조다운 / 충북대학교 정보통신공학부 
+ - 표정 분석 안드로이드 어플리케이션 개발
+ - android - server 데이터 송수신 구현
+
+
+오하영 / 충북대학교 정보통신공학부 
+ - python 데이터 분석 서버 개발
+ - 분석 웹페이지 구현
+
+
+
+​
+## 4-2. 연구 환경
 
 개발언어 :Java, Python
 
-개발도구 : Android Studio, Spyder, Putty
+개발도구 : Android Studio, Spyder, Putty, Flask
 
 데이터베이스 : Firebase (Cloud Firestore)
+
+
+​
 
 
 ## 5. 연구 결과
@@ -73,9 +111,15 @@ wordcloud, 사용자 별 빈도수, 요일 별 빈도수, 사용자들의 감정
 
 https://youtu.be/-DK67gsgLS8
 
-
 시연 동영상
 
+
+﻿
+ <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMTU2/MDAxNjA2ODAyNDM1MjU1.QsubiY4-VdQhWnzv5UGtBmg0c78BKPFeeBMfDnJueT4g.q7Wik86vK9InYnmi1JD4oA9Hr79vVlOpXcK6Lm-aVDYg.PNG.jodawooooon/Screenshot_20201127-233631.png?type=w773"  width="300" >
+ <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfNjQg/MDAxNjA2ODAyNDM1NDg1.kGXT9gQEaT1yAd3cgG8zPdiNGZ_0HCGiop_acU0uKmkg.n9HPvOXzJ-70nGh5jB2bl1ki0OA8mKz5CmO_eBZ5D-Ig.PNG.jodawooooon/Screenshot_20201127-233645.png?type=w773"  width="300" >
+  <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfMjgy/MDAxNjA2ODAyNDM1NTA2.4W7-Ummy3hBb6T7q5uBdThH3v8rtwabfMfJ9so4tAGMg._uw6qjLKYDkOEDbutC1KprmRZAi9I_TeRRk4xiwGOGIg.PNG.jodawooooon/Screenshot_20201028-010730.png?type=w773"  width="300" >
+   <img src="(https://postfiles.pstatic.net/MjAyMDEyMDFfNTMg/MDAxNjA2ODAyNDM1NzE0.qBDeMWYv27v9EVJj13tz3nIgdgtA8gDUwzBxQhgZkgog.G8fgd9avyEg425FF9N8rVonAPue2PryyeJB78OyFBqIg.PNG.jodawooooon/Screenshot_20201127-233845.png?type=w773"  width="300" > 
+  <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfNDgg/MDAxNjA2ODAyNDM1NzY4.-iIon6fi8TgWaQ1vVaSZuVDj3gcSfC7htXtXa7Plsasg.1iId7Y4-i5ITqIZ8OYpqsjUqos6ObjBT-GxnEutI8uwg.PNG.jodawooooon/Screenshot_20201127-233849.png?type=w773" width="300">
 
 
 ## 참고 자료
@@ -115,9 +159,16 @@ developer.android.com
 
 ​
 
-## 6. 후기
+
+## 6. 성능 분석
+
+채팅 중 실시간으로 전면 카메라를 통해 사용자의 표정을 인식하여 이모티콘으로 출력됨을 확인하였고, 서버에서 채팅 데이터를 수신하여 word cloud 및 사용자, 요일, 감정 별 빈도수 그래프 생성 후 웹 서버에 파싱됨을 확인함.
+ word cloud를 생성하기 위한 형태소 분석에서 최소 단위는 사전에 포함되지 않은 단어, 띄어쓰기가 불분명한 경우, 문장에서의 위치나 문맥에 따라 달라지므로 명사를 추출했을 때 어느 정도의 오차가 발생. 그러나 채팅방의 대화 주제를 확인함에는 무리가 없음.
+
+​
 
 
+## 7. 후기
 
 채팅 분석 버튼 클릭 시 웹 페이지가 뜰 때 까지 delay 시간이 존재한다. 채팅 방의 데이터 양에 따라 짧게는 10여초에서 길게는 40여초까지 delay가 존재하는 것으로 확인되었다. 이를 개선하기 위해 데이터 송수신을 재배치하여 시간을 단축시켜 보았으나 Socket을 이용하여 채팅 데이터를 보내고, Python 서버에서 채팅 분석 그래프를 만드는데 최소한의 시간이 필요하므로 어느 정도의 delay는 감수해야 한다고 판단했다.
 
@@ -125,8 +176,9 @@ developer.android.com
 
 또한 추가적인 delay를 최소화하기 위해 기존에 단순히 sleep하여 채팅 분석 웹페이지 intent로 넘어가던 것을 개선하여 로딩 화면이 출력되는 동안 AsyncTask를 이용하여 Background에서 채팅 분석 웹페이지의 URL에 계속 접근하여 Response Code를 계속 get한다. Response Code가 ok이면 채팅 분석 웹페이지가 구현이 다 되었다는 뜻이므로 Backgroud의 while문을 종료한다. onPostExecute에 채팅 분석 웹페이지 intent를 startActivity하여 통신이 완료되면 빠르게 채팅 분석 결과 웹페이지로 넘어가도록 했다.
 
-​
+
+ 채팅 분석이 wordcloud와 Seaborn의 Count Plot을 사용한 빈도수 그래프만 존재한다. 원래는 채팅 분석 결과의 다양성을 위해 Density Plot으로 시간대별 채팅 비율 그래프를 함께 사용하려고 하였으나, 그래프를 plot 하는 도중 categorical error 가 지속적으로 발생하여 아쉽지만 사용할 수 없었다. 
 
 ​
 
-
+​
