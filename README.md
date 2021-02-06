@@ -111,7 +111,7 @@ Android와 Python 서버 간 TCP/IP Socket 통신을 구현하였고 Python 서�
 
 ​
 <p align="center">
- <imt src="https://postfiles.pstatic.net/MjAyMDEyMDFfMjY3/MDAxNjA2ODAxMTM3NjAy.qt95CHDHV2oW1q-yxGm72s7UKpd2tHaXEuyDAjPOfC0g.oduNa8XlllBH_RSYi3oUs2rY5W79hRSULi5HnlO9Z2wg.PNG.jodawooooon/SE-ba7da886-2359-4c74-a916-3620ec683828.png?type=w773">
+ <img src="https://postfiles.pstatic.net/MjAyMDEyMDFfMjY3/MDAxNjA2ODAxMTM3NjAy.qt95CHDHV2oW1q-yxGm72s7UKpd2tHaXEuyDAjPOfC0g.oduNa8XlllBH_RSYi3oUs2rY5W79hRSULi5HnlO9Z2wg.PNG.jodawooooon/SE-ba7da886-2359-4c74-a916-3620ec683828.png?type=w773">
   </p>
 
 https://youtu.be/-DK67gsgLS8
