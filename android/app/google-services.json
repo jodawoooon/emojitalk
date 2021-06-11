@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "879807695591",
+    "firebase_url": "https://directtalk9-cd0d6.firebaseio.com",
+    "project_id": "directtalk9-cd0d6",
+    "storage_bucket": "directtalk9-cd0d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879807695591:android:56b911ea0241867f253042",
+        "android_client_info": {
+          "package_name": "gujc.emotionalTalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879807695591-r2h19cdg7q9gpkutni90i4772frhc5cl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gujc.emotionalTalk",
+            "certificate_hash": "e90a7a2282d23dcbb0d3b8ae9c29110a4a3cb9ac"
+          }
+        },
+        {
+          "client_id": "879807695591-iebjsh7c0eqo63fe5rdi0qauec154uj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3CwodflH8DjqLEetAY8QvXJm4oTEqRMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879807695591-iebjsh7c0eqo63fe5rdi0qauec154uj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

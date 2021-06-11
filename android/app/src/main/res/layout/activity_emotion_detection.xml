@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.EmotionDetection">
+
+
+    <Button
+        android:id="@+id/sdk_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/smile_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        tools:text="smile" />
+
+    <TextView
+        android:id="@+id/focus_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smile_textview"
+        android:layout_margin="16dp"
+        tools:text="focus" />
+
+    <TextView
+        android:id="@+id/valance_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/focus_textview"
+        android:layout_margin="16dp"
+        tools:text="valance" />
+
+    <TextView
+        android:id="@+id/surprise_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valance_textview"
+        android:layout_margin="16dp"
+        tools:text="surprise" />
+
+    <TextView
+        android:id="@+id/contempt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surprise_textview"
+        android:layout_margin="16dp"
+        tools:text="contempt" />
+
+    <TextView
+        android:id="@+id/sadness_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contempt_textview"
+        android:layout_margin="16dp"
+        tools:text="sadness" />
+
+    <TextView
+        android:id="@+id/anger_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sadness_textview"
+        android:layout_margin="16dp"
+        tools:text="anger" />
+
+    <TextView
+        android:id="@+id/result_emotion_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anger_textview"
+        android:layout_margin="16dp"
+        tools:text="result" />
+
+    <ImageView
+        android:id="@+id/result_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/result_emotion_textview"
+        android:src="@drawable/eye"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>
